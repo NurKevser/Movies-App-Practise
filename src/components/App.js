@@ -38,9 +38,15 @@ class App extends React.Component {
             m => m.id !== movie.id
             );
 
-            this.setState ({
+            /* this.setState ({
                 movies: newMovieList
-            })
+            }) */ //bu şablon genelde önceki state durumu boş array old kullanılır
+
+            this.setState(state => ({
+                movies: newMovieList
+            }))
+
+
     }
 
     render () {

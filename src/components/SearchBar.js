@@ -3,9 +3,15 @@ import React, { Component } from 'react'
 export class SearchBar extends Component {
     render() {
         return (
-            <div>
-                <h1>Search Bar</h1>
-            </div>
+            
+                <form>
+                    <div className="form-row mb-5">
+                        <div className="col-12">
+                            <input type="text" className="form-control" placeholder="Search a movie"/>
+                        </div>
+                    </div>
+                </form>
+            
         )
     }
 }
